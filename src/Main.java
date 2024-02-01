@@ -3,7 +3,7 @@ public class Main {
         int clientStartingBalance = 100;
         int amountPayment = 1100;
         int totalAmount = clientStartingBalance + amountPayment;
-            int depositBonus = amountPayment / 100;
+        int depositBonus = amountPayment / 100;
         if (amountPayment <= 1000) {
             depositBonus = 0;
             totalAmount = clientStartingBalance + amountPayment + depositBonus;
