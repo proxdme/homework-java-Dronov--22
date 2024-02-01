@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int start_bal = 100;
-        int amount_p = 1100;
-        int amount_bal = start_bal + amount_p;
-        int bonus_p = amount_p / 100;
-        if (amount_p <= 1000) {
-            bonus_p = 0;
-            amount_bal = start_bal + amount_p + bonus_p;
+        int clientStartingBalance = 100;
+        int amountPayment = 1100;
+        int totalAmount = clientStartingBalance + amountPayment;
+            int depositBonus = amountPayment / 100;
+        if (amountPayment <= 1000) {
+            depositBonus = 0;
+            totalAmount = clientStartingBalance + amountPayment + depositBonus;
         } else {
-            amount_bal = start_bal + amount_p + amount_p / 100;
+            totalAmount = clientStartingBalance + amountPayment + amountPayment / 100;
         }
-        System.out.println("Cтартовый баланс: " + start_bal);
-        System.out.println("Сумма пополнения: " + amount_p);
-        System.out.println("Итоговая Сумма: " + amount_bal);
-        System.out.println("Бонус за пополнение: " + bonus_p);
+        System.out.println("Client Starting Balance: " + clientStartingBalance);
+        System.out.println("Amount Paymet: " + amountPayment);
+        System.out.println("Total Amount: " + totalAmount);
+        System.out.println("Deposit Bonus: " + depositBonus);
     }
 }
